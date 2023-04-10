@@ -41,6 +41,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* TODO:
+   fix picture height
+   fix padding on p
+*/
 body {
   font-family: "Manrope";
   font-size: 0.8125rem;
@@ -53,6 +57,7 @@ body {
 .App {
   box-shadow: 0.5rem 0.5rem 1rem hsl(212, 23%, 69%);
   border-radius: 0.7rem;
+  min-width: 20.625rem;
   overflow: hidden;
 }
 
@@ -64,12 +69,37 @@ h2 {
 }
 
 main {
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
 }
 
 p {
   color: hsl(214, 17%, 51%);
   padding-top: 1rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  margin-top: 0.8rem;
+}
+
+.profile-name {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.post-date {
+  margin: 0;
+  padding: 0;
 }
 
 .sr-only:not(:focus):not(:active) {

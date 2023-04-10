@@ -9,6 +9,11 @@ $fw-500: 500;
 $fw-700: 700;
 $font-family: 'Manrope';
 
+
+/* TODO:
+   fix picture height
+   fix padding on p
+*/
 body {
     font-family: $font-family;
     font-size: $font-size;
@@ -21,6 +26,7 @@ body {
 .App {
     box-shadow: 0.5rem 0.5rem 1rem $gray-blue;
     border-radius: 0.7rem;
+    min-width: 20.625rem;
     overflow: hidden;
 }
 
@@ -35,12 +41,41 @@ h2 {
 }
 
 main {
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
 }
 
 p {
     color: $desat-blue;
     padding-top: 1rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    margin-top: 0.8rem;
+}
+
+.profile-name {
+    font-weight: $fw-700;
+    color: $dark-gray-blue;
+}
+
+.post-date {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+
 }
 
 .sr-only:not(:focus):not(:active) {

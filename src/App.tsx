@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import drawer from '../public/images/drawers.jpg'
+import avatar from '../public/images/avatar-michelle.jpg'
 
 function App() {
 
@@ -19,11 +20,19 @@ function App() {
          it felt slightly bare and uninviting. I’ve got some simple tips 
          to help you make any room feel complete.
          </p>
-
-         Michelle Appleton
+         <div className='profile-container'>
+          <img className='avatar' src={avatar} alt=""></img>
+          <div>
+          <p className='profile-name'>
+           Michelle Appleton
+         </p>
+         <p className='post-date'>
          28 Jun 2020
-
-         Share
+         </p>
+         </div>
+         <button></button>
+         {/* Share */}
+         </div>
       </main>
   
     </div>
