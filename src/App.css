@@ -43,7 +43,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* TODO:
    fix picture height
-   fix padding on p
+   add alt text
 */
 body {
   font-family: "Manrope";
@@ -57,7 +57,7 @@ body {
 .App {
   box-shadow: 0.5rem 0.5rem 1rem hsl(212, 23%, 69%);
   border-radius: 0.7rem;
-  min-width: 20.625rem;
+  max-width: 20.625rem;
   overflow: hidden;
 }
 
@@ -75,31 +75,69 @@ main {
 p {
   color: hsl(214, 17%, 51%);
   padding-top: 1rem;
+  padding-right: 0.5rem;
 }
 
 .profile-container {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  align-items: center;
 }
 
 .avatar {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
-  margin-top: 0.8rem;
 }
 
 .profile-name {
   font-weight: 700;
   color: hsl(217, 19%, 35%);
+  padding: 0;
 }
 
 .post-date {
-  margin: 0;
   padding: 0;
+}
+
+button {
+  border-radius: 50%;
+  border: 0 solid transparent;
+  height: 2.2rem;
+  width: 2rem;
+  padding: 0 0 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  align-items: center;
+  color: hsl(210, 46%, 95%);
+  background-color: hsl(217, 19%, 35%);
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  color: hsl(212, 23%, 69%);
+  text-transform: uppercase;
+}
+
+.social-button {
+  background-color: hsl(212, 23%, 69%);
+  margin-left: 2rem;
+}
+
+.social-button-icon {
+  color: white;
 }
 
 .sr-only:not(:focus):not(:active) {

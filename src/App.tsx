@@ -2,6 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import drawer from '../public/images/drawers.jpg'
 import avatar from '../public/images/avatar-michelle.jpg'
+import share from '../public/images/icon-share.svg'
+import facebook from '../public/images/icon-facebook.svg'
+import pinterest from '../public/images/icon-pinterest.svg'
+import twitter from '../public/images/icon-twitter.svg'
 
 function App() {
 
@@ -30,10 +34,19 @@ function App() {
          28 Jun 2020
          </p>
          </div>
-         <button></button>
-         {/* Share */}
+         <button>
+          <img src={share} alt=""></img>
+         </button>
          </div>
-      </main>
+         </main>
+         <div className='social-container'>
+          <h3>share</h3>
+          <img src={facebook} alt=""></img>
+          <img src={twitter} alt=""></img>
+          <img src={pinterest} alt=""></img>
+          <button className='social-button'><img className='social-button-icon' src={share} alt=""></img></button>
+         </div>
+      {/* </main> */}
   
     </div>
   )
