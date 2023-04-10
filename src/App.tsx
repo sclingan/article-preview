@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className='sr-hidden'>Article preview page</h1>
+        <h1 className='sr-only'>Article preview page</h1>
        <img src={drawer} alt=""></img>
       </header>
       <main>

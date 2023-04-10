@@ -1,1 +1,54 @@
 @use 'css-reset.scss';
+
+$dark-gray-blue: hsl(217, 19%, 35%);
+$desat-blue: hsl(214, 17%, 51%);
+$gray-blue: hsl(212, 23%, 69%);
+$light-gray-blue: hsl(210, 46%, 95%);
+$font-size: 0.8125rem;
+$fw-500: 500;
+$fw-700: 700;
+$font-family: 'Manrope';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $fw-500;
+    text-align: left;
+    padding-top: 4rem;
+    padding-inline: 1rem;
+}
+
+.App {
+    box-shadow: 0.5rem 0.5rem 1rem $gray-blue;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+header {
+}
+
+h2 {
+    font-weight: $fw-700;
+    color: $dark-gray-blue;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+}
+
+main {
+    padding-inline: 1.5rem;
+}
+
+p {
+    color: $desat-blue;
+    padding-top: 1rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
