@@ -146,8 +146,8 @@ h3 {
   margin-left: 2rem;
 }
 
-.social-button-icon {
-  color: white;
+svg {
+  fill: white;
 }
 
 .sr-only:not(:focus):not(:active) {
