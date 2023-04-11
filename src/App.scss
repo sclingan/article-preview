@@ -90,6 +90,17 @@ button {
     color: $light-gray-blue;
     background-color: $dark-gray-blue;
     margin-top: 1.5rem;
+    animation-name: social;
+    animation-duration: 1s;
+}
+
+@keyframes social {
+    from {
+        padding-left: 10rem;
+    }
+    to {
+        padding-left: 1.5rem;
+    }
 }
 
 h3 {
