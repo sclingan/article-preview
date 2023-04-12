@@ -13,6 +13,7 @@ $font-family: 'Manrope';
 /* TODO:
    fix picture height
    add alt text
+   make button responsive at 340px <
 */
 body {
     font-family: $font-family;
@@ -26,7 +27,6 @@ body {
 .App {
     box-shadow: 0.5rem 0.5rem 1rem $gray-blue;
     border-radius: 0.7rem;
-    max-width: 20.625rem; //check this
     overflow: hidden;
 }
 
@@ -50,6 +50,7 @@ p {
 .profile-container {
     display: flex;
     flex-direction: row;
+    flex-shrink: 2;
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
@@ -84,6 +85,7 @@ button {
 .social-container {
     display: flex;
     flex-direction: row;
+    flex-shrink: 2;
     gap: 1rem;
     padding: 1rem 2rem;
     align-items: center;
@@ -92,6 +94,7 @@ button {
     margin-top: 1.5rem;
     animation-name: social;
     animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes social {
@@ -112,7 +115,7 @@ h3 {
 }
 
 .social-button {
-    background-color: $gray-blue;
+    background-color: $desat-blue;
     margin-left: 2rem;
 }
 
@@ -129,3 +132,60 @@ svg {
     white-space: nowrap; 
     width: 1px;
   }
+
+// Tablet
+@media (min-width: 42.5rem) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        padding-inline: 4rem; // watch this 
+    }
+
+    .App {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: auto;
+       position: relative;
+       overflow: visible;
+    }
+
+    .header-image {
+        border-top-left-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
+    }
+
+    .profile-container {
+        grid-column: 2/2;
+    }
+    
+    // This becomes a tooltip
+    .social-container {
+        position: absolute;
+        top: 8rem;
+        right: -3rem;
+        padding: 0.5rem;
+        gap: 0.7rem;
+        border-radius: 0.5rem;
+    }
+
+    .social-container::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 0.5rem;
+        border-style: solid;
+        border-color: $dark-gray-blue transparent transparent;
+    }
+
+ 
+}
+
+// Desktop
+@media (min-width: 53.75rem) {
+
+}

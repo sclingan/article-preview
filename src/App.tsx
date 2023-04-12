@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header>
         <h1 className='sr-only'>Article preview page</h1>
-       <img src={drawer} alt=""></img>
+       <img className='header-image' src={drawer} alt=""></img>
       </header>
       <main>
          <h2>Shift the overall look and feel by adding these wonderful 
@@ -45,12 +45,10 @@ function App() {
           <img src={facebook} alt=""></img>
           <img src={twitter} alt=""></img>
           <img src={pinterest} alt=""></img>
-          {/* <button className='social-button' onClick={showSocial}><img className='social-button-icon' src={share} alt=""></img></button> */}
           <button className='social-button' onClick={showSocial}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#00000" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#fff" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
          </div>
-  
     </div>
   )
 }
