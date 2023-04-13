@@ -12,9 +12,13 @@ $font-family: 'Manrope';
 
 /* TODO:
    fix picture height
+   fix picture height at 680px to 860px
    add alt text
-   make button responsive at 340px <
+   button needs to be dropped on tooltip
+   profile needs to be shown at tablet and desktop
+   adjust button spacing on tablet and desktop
 */
+
 body {
     font-family: $font-family;
     font-size: $font-size;
@@ -76,8 +80,8 @@ p {
 button {
     border-radius: 50%;
     border: 0 solid transparent;
-    height: 2.2rem; //fix this
-    width: 2rem; //fix this
+    min-height: 2.2rem; 
+    min-width: 2rem; 
     padding: 0 0 0.1rem 0.5rem;
     cursor: pointer;
 }
@@ -89,6 +93,7 @@ button {
     gap: 1rem;
     padding: 1rem 2rem;
     align-items: center;
+    justify-content: center;
     color: $light-gray-blue;
     background-color: $dark-gray-blue;
     margin-top: 1.5rem;
@@ -159,16 +164,22 @@ svg {
 
     .profile-container {
         grid-column: 2/2;
+        margin-top: 2rem;
     }
     
     // This becomes a tooltip
     .social-container {
         position: absolute;
         top: 8rem;
-        right: -3rem;
-        padding: 0.5rem;
-        gap: 0.7rem;
+        right: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        // gap: 0.7rem;
+        gap: 1rem;
         border-radius: 0.5rem;
+    }
+
+    button {
+        // margin-left: 6rem;
     }
 
     .social-container::after {

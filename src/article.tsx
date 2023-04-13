@@ -1,8 +1,24 @@
+// TODO: 
+//    Make variables typescript
+
+
+
+
 export default function showSocial() {
     const social = document.getElementById('social');
     const profile = document.getElementById('profile');
-    
+    const button = document.getElementById('social-button');
+    let screenWidth = window.innerWidth;
+    console.log(screenWidth);
 
+    if(screenWidth > 680){
+        button?.classList.remove('social-button')
+        button?.classList.add('sr-only')
+        social?.classList.remove('sr-only')
+        social?.classList.add('social-container');
+    } 
+    
+    if(screenWidth < 680){
     // If profile is shown, slide in Icons
     if(profile?.className === 'profile-container') {
         profile?.classList.remove('profile-container');
@@ -16,4 +32,5 @@ export default function showSocial() {
         social?.classList.remove('social-container')
         social?.classList.add('sr-only');
     }
+}
 }
