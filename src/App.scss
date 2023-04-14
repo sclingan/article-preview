@@ -12,11 +12,10 @@ $font-family: 'Manrope';
 
 /* TODO:
    fix picture height
-   fix picture height at 680px to 860px
    add alt text
-   button needs to be dropped on tooltip
-   profile needs to be shown at tablet and desktop
    adjust button spacing on tablet and desktop
+   on tablet and desktop add active colors to button
+   add active states on social icons and links
 */
 
 body {
@@ -146,20 +145,22 @@ svg {
         align-items: center;
         justify-content: center;
         padding-top: 0;
-        padding-inline: 4rem; // watch this 
+        padding-inline: 4rem; 
     }
 
     .App {
        display: grid;
        grid-template-columns: 1fr 1fr;
-       grid-template-rows: auto;
        position: relative;
        overflow: visible;
+       max-width: 45.9375rem;
     }
 
     .header-image {
         border-top-left-radius: 0.7rem;
         border-bottom-left-radius: 0.7rem;
+        object-fit: cover;
+        min-height: 100%;
     }
 
     .profile-container {
@@ -170,16 +171,11 @@ svg {
     // This becomes a tooltip
     .social-container {
         position: absolute;
-        top: 8rem;
-        right: 1.5rem;
+        top: 10.5rem;
+        right: -0.8rem;
         padding: 0.8rem 1.5rem;
-        // gap: 0.7rem;
         gap: 1rem;
         border-radius: 0.5rem;
-    }
-
-    button {
-        // margin-left: 6rem;
     }
 
     .social-container::after {

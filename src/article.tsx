@@ -9,15 +9,23 @@ export default function showSocial() {
     const profile = document.getElementById('profile');
     const button = document.getElementById('social-button');
     let screenWidth = window.innerWidth;
-    console.log(screenWidth);
-
+   
+    // Tablet and Desktop
     if(screenWidth > 680){
-        button?.classList.remove('social-button')
-        button?.classList.add('sr-only')
-        social?.classList.remove('sr-only')
-        social?.classList.add('social-container');
-    } 
+        // If tooltip is shown, close tooltip
+        if(social?.className === 'social-container') {
+            social?.classList.remove('social-container');
+            social?.classList.add('sr-only');
+        } else {
+            // Show tooltip
+            button?.classList.remove('social-button');
+            button?.classList.add('sr-only');
+            social?.classList.remove('sr-only');
+            social?.classList.add('social-container');
+        }
+    }
     
+    // Mobile
     if(screenWidth < 680){
     // If profile is shown, slide in Icons
     if(profile?.className === 'profile-container') {
@@ -29,7 +37,7 @@ export default function showSocial() {
         // Hide Icons, show profile
         profile?.classList.remove('sr-only');
         profile?.classList.add('profile-container');
-        social?.classList.remove('social-container')
+        social?.classList.remove('social-container');
         social?.classList.add('sr-only');
     }
 }
