@@ -42,9 +42,9 @@ function App() {
          </main>
          <div className='sr-only' id='social'>
           <h3>share</h3>
-          <img src={facebook} alt=""></img>
-          <img src={twitter} alt=""></img>
-          <img src={pinterest} alt=""></img>
+          <a href='https://www.facebook.com' target="_blank"><img src={facebook} alt=""></img></a>
+          <a href='https://twitter.com' target="_blank"><img src={twitter} alt=""></img></a>
+          <a href='https://www.pinterest.com/' target="_blank"><img src={pinterest} alt=""></img></a>
           <button className='social-button' id='social-button' onClick={showSocial}>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#fff" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
