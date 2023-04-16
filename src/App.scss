@@ -15,7 +15,6 @@ $font-family: 'Manrope';
    add alt text
    adjust button spacing on tablet and desktop
    on tablet and desktop add active colors to button
-   add active states on social icons and links
 */
 
 body {
@@ -84,6 +83,14 @@ button {
     padding: 0 0 0.1rem 0.5rem;
     cursor: pointer;
 }
+
+// button:hover {
+//     background-color: $desat-blue;
+// }
+
+// svg > path:hover {
+//     fill: hsl(210, 46%, 95%);
+// }
 
 .social-container {
     display: flex;
