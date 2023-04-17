@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* TODO:
    fix picture height
    add alt text
-   adjust button spacing on tablet and desktop
+   adjust button spacing on all, try not using margin, use something responsive
    on tablet and desktop add active colors to button
 */
 body {
@@ -151,10 +151,6 @@ h3 {
   margin-left: 2rem;
 }
 
-svg {
-  fill: white;
-}
-
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -192,10 +188,13 @@ svg {
     grid-column: 2/2;
     margin-top: 2rem;
   }
+  button {
+    margin-left: 3rem;
+  }
   .social-container {
     position: absolute;
-    top: 10.5rem;
-    right: -0.8rem;
+    top: 11.5rem;
+    right: -3.8rem;
     padding: 0.8rem 1.5rem;
     gap: 1rem;
     border-radius: 0.5rem;
@@ -209,5 +208,17 @@ svg {
     border-width: 0.5rem;
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent;
+  }
+}
+@media (min-width: 53.75rem) {
+  main {
+    min-width: 27.8125rem;
+  }
+  button {
+    margin-left: 7rem;
+  }
+  .social-container {
+    top: 8rem;
+    right: -2.8rem;
   }
 }/*# sourceMappingURL=App.css.map */

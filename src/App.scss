@@ -13,7 +13,7 @@ $font-family: 'Manrope';
 /* TODO:
    fix picture height
    add alt text
-   adjust button spacing on tablet and desktop
+   adjust button spacing on all, try not using margin, use something responsive
    on tablet and desktop add active colors to button
 */
 
@@ -84,14 +84,6 @@ button {
     cursor: pointer;
 }
 
-// button:hover {
-//     background-color: $desat-blue;
-// }
-
-// svg > path:hover {
-//     fill: hsl(210, 46%, 95%);
-// }
-
 .social-container {
     display: flex;
     flex-direction: row;
@@ -128,10 +120,6 @@ h3 {
 .social-button {
     background-color: $desat-blue;
     margin-left: 2rem;
-}
-
-svg {
-    fill: white;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -174,12 +162,16 @@ svg {
         grid-column: 2/2;
         margin-top: 2rem;
     }
+
+    button {
+        margin-left: 3rem;
+    }
     
     // This becomes a tooltip
     .social-container {
         position: absolute;
-        top: 10.5rem;
-        right: -0.8rem;
+        top: 11.5rem;
+        right: -3.8rem;
         padding: 0.8rem 1.5rem;
         gap: 1rem;
         border-radius: 0.5rem;
@@ -200,5 +192,19 @@ svg {
 
 // Desktop
 @media (min-width: 53.75rem) {
+
+    main {
+        min-width: 27.8125rem;
+    }
+
+    button {
+        margin-left: 7rem;
+    }
+
+    .social-container {
+        top: 8rem;
+        right: -2.8rem;
+    }
+
 
 }
