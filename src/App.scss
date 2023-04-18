@@ -164,14 +164,10 @@ h3 {
         margin-top: 2rem;
     }
 
-    button {
-        margin-left: 3rem;
-    }
-    
     // This becomes a tooltip
     .social-container {
         position: absolute;
-        top: 11.5rem;
+        top: 11rem;
         right: -3.8rem;
         padding: 0.8rem 1.5rem;
         gap: 1rem;
@@ -198,13 +194,13 @@ h3 {
         min-width: 27.8125rem;
     }
 
-    button {
-        margin-left: 7rem;
-    }
-
     .social-container {
         top: 8rem;
         right: -3.8rem;
+    }
+    
+    button {
+        margin-left: 8rem;
     }
 
 
