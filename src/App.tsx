@@ -14,7 +14,8 @@ function App() {
     <div className="App">
       <header>
         <h1 className='sr-only'>Article preview page</h1>
-       <img className='header-image' src={drawer} alt=""></img>
+       <img className='header-image' src={drawer} alt="A green dresser with
+            flowers and pictures arranged neatly on top"></img>
       </header>
       <main>
          <h2>Shift the overall look and feel by adding these wonderful 
@@ -26,7 +27,7 @@ function App() {
          to help you make any room feel complete.
          </p>
          <div className='profile-container' id='profile'>
-          <img className='avatar' src={avatar} alt=""></img>
+          <img className='avatar' src={avatar} alt="Michelle Appleton"></img>
           <div>
           <p className='profile-name'>
            Michelle Appleton
@@ -35,17 +36,17 @@ function App() {
          28 Jun 2020
          </p>
          </div>
-         <button onClick={showSocial}>
+         <button onClick={showSocial} aria-label='links to share on social media'>
           <img src={share} alt=""></img>
          </button>
          </div>
          </main>
          <div className='sr-only' id='social'>
           <h3>share</h3>
-          <a href='https://www.facebook.com' target="_blank"><img src={facebook} alt=""></img></a>
-          <a href='https://twitter.com' target="_blank"><img src={twitter} alt=""></img></a>
-          <a href='https://www.pinterest.com/' target="_blank"><img src={pinterest} alt=""></img></a>
-          <button className='social-button' id='social-button' onClick={showSocial}>
+          <a href='https://www.facebook.com' target="_blank"><img src={facebook} alt="Facebook homepage"></img></a>
+          <a href='https://twitter.com' target="_blank"><img src={twitter} alt="Twitter homepage"></img></a>
+          <a href='https://www.pinterest.com/' target="_blank"><img src={pinterest} alt="Pinterest homepage"></img></a>
+          <button className='social-button' id='social-button' onClick={showSocial} aria-label='links to share on social media'>
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#fff" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
          </div>

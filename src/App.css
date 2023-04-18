@@ -43,9 +43,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* TODO:
    fix picture height
-   add alt text
-   adjust button spacing on all, try not using margin, use something responsive
    on tablet and desktop add active colors to button
+   check all files for fixes and todo's
 */
 body {
   font-family: "Manrope";
@@ -83,10 +82,11 @@ p {
   display: flex;
   flex-direction: row;
   flex-shrink: 2;
-  gap: 2rem;
+  gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .avatar {
@@ -117,6 +117,7 @@ button {
 .social-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   flex-shrink: 2;
   gap: 1rem;
   padding: 1rem 2rem;
@@ -219,6 +220,6 @@ h3 {
   }
   .social-container {
     top: 8rem;
-    right: -2.8rem;
+    right: -3.8rem;
   }
 }/*# sourceMappingURL=App.css.map */
