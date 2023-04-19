@@ -28,16 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
-
+![](./public/images/screenshot.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://sclingan.github.io/article-preview)
 
 ## My process
 
@@ -53,17 +50,20 @@ Users should be able to:
 
 ### What I learned
 
-
+I learned about using CSS animations, still need to work on a better understanding
+of animation timing. I also learned about using a tooltip, using ::before and 
+::after for the pointer.
 
 
 ### Continued development
 
-
+I would like to return to this project and improve on animations and 
+use a backend API to load different posts.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- (https://developer.mozilla.org/en-US/) - A great resource for all things web dev!
+- (https://validator.w3.org/) - Test your website!!
 
 
 ## Author
