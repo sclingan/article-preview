@@ -1,8 +1,3 @@
-// TODO: 
-//    Make variables typescript
-
-
-
 
 export default function showSocial() {
     const social = document.getElementById('social');
@@ -41,5 +36,5 @@ export default function showSocial() {
         social?.classList.remove('social-container');
         social?.classList.add('sr-only');
     }
-}
+  }
 }

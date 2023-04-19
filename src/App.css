@@ -41,10 +41,6 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* TODO:
-   fix picture height
-   check all files for fixes and todo's
-*/
 body {
   font-family: "Manrope";
   font-size: 0.8125rem;
