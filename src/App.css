@@ -43,7 +43,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* TODO:
    fix picture height
-   on tablet and desktop add active colors to button
    check all files for fixes and todo's
 */
 body {
@@ -206,6 +205,9 @@ h3 {
     border-width: 0.5rem;
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent;
+  }
+  button:hover {
+    border: 0.1rem solid hsl(214, 17%, 51%);
   }
 }
 @media (min-width: 53.75rem) {

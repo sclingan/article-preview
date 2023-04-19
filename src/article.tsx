@@ -9,6 +9,7 @@ export default function showSocial() {
     const profile = document.getElementById('profile');
     const button = document.getElementById('social-button');
     let screenWidth = window.innerWidth;
+
    
     // Tablet and Desktop
     if(screenWidth > 680){
